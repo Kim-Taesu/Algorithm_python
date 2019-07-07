@@ -24,6 +24,8 @@ for i in range(1, len(line2) + 1):
     if (line[i] >= 1 and line[i] <= 9):
         dp[i] = (dp[i - 1] + dp[i]) % mod
 
+    print(line)
+    print(dp)
     if (i == 1):
         continue
 
