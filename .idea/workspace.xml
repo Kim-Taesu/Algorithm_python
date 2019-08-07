@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="499d3814-b669-4b6b-9ae6-95f5c2cc1d43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dijkstra/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dijkstra/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/shortest_path/dijkstra.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,37 +27,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bfs/bj_9019.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="18" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bfs/bj_6603.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shortest_path/dijkstra.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1083">
-              <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mst/prim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+            <state relative-caret-position="874">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding>
                 <element signature="e#193#205#0" expanded="true" />
               </folding>
@@ -70,19 +41,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mst/kruskal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+            <state relative-caret-position="270">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="45" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shortest_path/floyd-warchall.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
               <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spanning_tree/bj_1197.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spanning_tree/bj_4195.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="40" column="30" lean-forward="true" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spanning_tree/bj_1922.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -97,7 +91,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bfs/bj_5427.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
+            <state relative-caret-position="76">
               <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="6" selection-end-column="47" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -109,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bfs/bj_3055.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="285">
               <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -121,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bfs/bj_4991.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="608">
               <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -166,8 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/python 기말/4분반/201910956_박소현/2.py" />
-        <option value="$USER_HOME$/python 기말/4분반/201910969_서유림/2.py" />
         <option value="$USER_HOME$/python 기말/4분반/201910981_유승환/2.py" />
         <option value="$USER_HOME$/python 기말/4분반/201910986_이건우/2.py" />
         <option value="$USER_HOME$/python 기말/4분반/201910996_이은총/2.py" />
@@ -217,6 +209,8 @@
         <option value="$PROJECT_DIR$/mst/kruskal.py" />
         <option value="$PROJECT_DIR$/mst/prim.py" />
         <option value="$PROJECT_DIR$/shortest_path/floyd-warchall.py" />
+        <option value="$PROJECT_DIR$/spanning_tree/bj_1197.py" />
+        <option value="$PROJECT_DIR$/spanning_tree/bj_4195.py" />
       </list>
     </option>
   </component>
@@ -224,6 +218,9 @@
     <option name="x" value="922" />
     <option name="width" value="943" />
     <option name="height" value="1087" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -246,12 +243,7 @@
             <path>
               <item name="Algorithm_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm_python" type="462c0819:PsiDirectoryNode" />
-              <item name="shortest_path" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm_python" type="462c0819:PsiDirectoryNode" />
-              <item name="tree" type="462c0819:PsiDirectoryNode" />
+              <item name="spanning_tree" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,7 +254,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spanning_tree" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -272,6 +264,9 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kim-Taesu\Desktop\project\Algorithm_python\spanning_tree" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kim-Taesu\Desktop\project\Algorithm_python\shortest_path" />
       <recent name="C:\Users\Kim-Taesu\PycharmProjects\untitled\brute_force" />
@@ -289,8 +284,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prim">
-    <configuration name="bj_3055" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.bj_4195">
+    <configuration name="bj_1197" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,12 +293,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bfs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spanning_tree" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bfs/bj_3055.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spanning_tree/bj_1197.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -312,7 +307,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bj_4991" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="bj_4195" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,12 +315,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bfs" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spanning_tree" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bfs/bj_4991.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spanning_tree/bj_4195.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -402,11 +397,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bj_4195" />
+        <item itemvalue="Python.bj_1197" />
         <item itemvalue="Python.prim" />
         <item itemvalue="Python.kruskal" />
         <item itemvalue="Python.union_find" />
-        <item itemvalue="Python.bj_4991" />
-        <item itemvalue="Python.bj_3055" />
       </list>
     </recent_temporary>
   </component>
@@ -441,23 +436,24 @@
       <workItem from="1564013725040" duration="3816000" />
       <workItem from="1564753498874" duration="16933000" />
       <workItem from="1564980556666" duration="11182000" />
-      <workItem from="1565054533603" duration="10783000" />
+      <workItem from="1565054533603" duration="11481000" />
+      <workItem from="1565133814545" duration="7924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199884000" />
+    <option name="totallyTimeSpent" value="208506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="922" y="0" width="943" height="1087" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19479048" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1993205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25603357" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25498426" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48365018" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -475,13 +471,13 @@
       <window_info anchor="right" id="Database" order="4" weight="0.3297342" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17327294" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1993205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3231899" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25498426" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.48365018" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -522,6 +518,7 @@
     <SUITE FILE_PATH="coverage/untitled$bj_14888.coverage" NAME="bj_14888 Coverage Results" MODIFIED="1561442584283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_6603.coverage" NAME="bj_6603 Coverage Results" MODIFIED="1563979023443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
     <SUITE FILE_PATH="coverage/Algorithm_python$prim.coverage" NAME="prim Coverage Results" MODIFIED="1565099726648" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mst" />
+    <SUITE FILE_PATH="coverage/Algorithm_python$bj_1197.coverage" NAME="bj_1197 Coverage Results" MODIFIED="1565137260863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spanning_tree" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_1003.coverage" NAME="bj_1003 Coverage Results" MODIFIED="1561694572642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_13460.coverage" NAME="bj_13460 Coverage Results" MODIFIED="1563034069510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_14502.coverage" NAME="bj_14502 Coverage Results" MODIFIED="1563325078447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
@@ -549,6 +546,7 @@
     <SUITE FILE_PATH="coverage/untitled$_3.coverage" NAME="기말 3 Coverage Results" MODIFIED="1560934663150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/python 기말/4분반/201510009_김선광" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_11053.coverage" NAME="bj_11053 Coverage Results" MODIFIED="1561777615319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_7569.coverage" NAME="bj_7569 Coverage Results" MODIFIED="1563966275005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
+    <SUITE FILE_PATH="coverage/Algorithm_python$bj_4195.coverage" NAME="bj_4195 Coverage Results" MODIFIED="1565141624226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spanning_tree" />
     <SUITE FILE_PATH="coverage/Algorithm_python$union_find.coverage" NAME="union_find Coverage Results" MODIFIED="1565096728928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mst" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_5427.coverage" NAME="bj_5427 Coverage Results" MODIFIED="1564876365939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_1012.coverage" NAME="bj_1012 Coverage Results" MODIFIED="1562505009775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
@@ -563,9 +561,6 @@
     <SUITE FILE_PATH="coverage/Algorithm_python$BJ_1697.coverage" NAME="BJ_1697 Coverage Results" MODIFIED="1562495801610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/python 기말/4분반/201910969_서유림/2.py" />
-    <entry file="file://$USER_HOME$/python 기말/4분반/201910981_유승환/2.py" />
-    <entry file="file://$USER_HOME$/python 기말/4분반/201910986_이건우/2.py" />
     <entry file="file://$USER_HOME$/python 기말/4분반/201910996_이은총/2.py" />
     <entry file="file://$USER_HOME$/python 기말/4분반/201910999_이제운/2.py" />
     <entry file="file://$USER_HOME$/python 기말/4분반/201911025_황선민/2번.py" />
@@ -826,9 +821,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shortest_path/dijkstra.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mst/prim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="e#193#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bfs/bj_5427.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
+        <state relative-caret-position="76">
           <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -838,7 +850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs/bj_3055.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="285">
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -848,7 +860,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs/bj_4991.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
+        <state relative-caret-position="608">
           <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -856,10 +868,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shortest_path/dijkstra.py">
+    <entry file="file://$PROJECT_DIR$/shortest_path/floyd-warchall.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="57" column="37" selection-start-line="57" selection-start-column="37" selection-end-line="57" selection-end-column="37" />
+        <state relative-caret-position="494">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -870,27 +882,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mst/prim.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="47" column="42" lean-forward="true" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
-          <folding>
-            <element signature="e#193#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mst/kruskal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        <state relative-caret-position="270">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="45" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shortest_path/floyd-warchall.py">
+    <entry file="file://$PROJECT_DIR$/spanning_tree/bj_1922.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanning_tree/bj_1197.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spanning_tree/bj_4195.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="40" column="30" lean-forward="true" selection-end-line="47" />
         </state>
       </provider>
     </entry>
