@@ -1,5 +1,6 @@
 import sys
-sys.setrecursionlimit(10**6)
+
+sys.setrecursionlimit(10 ** 6)
 
 input = sys.stdin.readline
 
@@ -9,7 +10,7 @@ arr = [[False] * (C + 1) for _ in range(R + 1)]
 
 for _ in range(M):
     r, c, s, d, z = map(int, input().strip().split())
-    arr[r][c] = (s, d, z, 1)
+    arr[r][c] = (s, d, z)
 
 result = 0
 
@@ -40,340 +41,91 @@ def catch(col):
 # 홀수면 반대 방향에서 출발, 반대 방향으로 플러스
 
 
-def moving(tr, tc, ts, td, tz, time):
-
+def moving(tr, tc, ts, td, tz, visit, speed):
+    # print(tr, tc, ts, td, tz, speed)
+    tsTmp = speed
     if td == 1:
-        # 벽에 튕겨나옴
-        if tr - ts < 1:
-            tsTmp = ts
-
-            # 벽까지 이동
-            tsTmp -= tr - 1
-            # 방향 변경
-            td = 2
-
-            # 벽까지 이동 후 남은거리 계산
-            tmp1 = tsTmp // (R - 1)
-            tmp2 = tsTmp - (R - 1) * tmp1
-
-            # 현재 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 그대로
-            if tmp1 % 2 == 0:
-                # 이동
-                tr = 1 + tmp2
-                # 이동위치에 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-                # 이동위치에 다른 상어 없을 때
-                else:
-                    # 이동할 상어가 있을 때 그 상어부터 이동
-                    if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                        tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                        arr[tr][tc] = False
-                        moving(tr, tc, tts, ttd, ttz, ttt)
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-
-            # 반대 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 변경
-            else:
-                td = 1
-                # 이동
-                tr = R - tmp2
-                # 이동위치에 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-                # 이동위치에 다른 상어 없을 때
-                else:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-            pass
-
-        # 벽까지 가거나 그전에 멈춤
+        tsTmp = tsTmp % (2 * R - 2)
+        if tr == 1:
+            moving(tr, tc, ts, 2, tz, visit, tsTmp)
+            return
         else:
-            # 이동
-            tr = tr - ts
-            # 이동위치에 다른 상어 있을 때
-            if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                # 지금 이동한 상어가 더 큼
-                if arr[tr][tc][2] < tz:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-                # 원래 있는 상어가 더 큼
-                else:
-                    return
-            # 이동위치에 다른 상어 없을 때
+            if tr - tsTmp < 1:
+                tsTmp -= (tr - 1)
+                moving(1, tc, ts, 2, tz, visit, tsTmp)
             else:
-                # 이동할 상어가 있을 때 그 상어부터 이동
-                if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                    tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                    arr[tr][tc] = False
-                    moving(tr, tc, tts, ttd, ttz, ttt)
-                arr[tr][tc] = (ts, td, tz, time + 1)
-
-            pass
-        pass
-    elif td == 2:
-        # 벽에 튕겨나옴
-        if tr + ts > R:
-            tsTmp = ts
-
-            # 벽까지 이동
-            tsTmp -= R - tr
-
-            # 방향 변경
-            td = 1
-            # 벽까지 이동 후 남은거리 계산
-            tmp1 = tsTmp // (R - 1)
-            tmp2 = tsTmp - (R - 1) * tmp1
-
-            # 현재 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 그대로
-            if tmp1 % 2 == 0:
-                # 이동
-                tr = R - tmp2
-                # 이동위치에 이동한 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-
-                # 이동위치에 이동한 다른 상어 없을 때
+                tr -= tsTmp
+                if visit[tr][tc] != False:
+                    if visit[tr][tc][2] < tz:
+                        visit[tr][tc] = (ts, td, tz)
                 else:
-                    # 이동할 상어가 있을 때 그 상어부터 이동
-                    if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                        tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                        arr[tr][tc] = False
-                        moving(tr, tc, tts, ttd, ttz, ttt)
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-
-            # 반대 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 변경
-            else:
-                td = 2
-                # 이동
-                tr = 1 + tmp2
-                # 이동위치에 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-                # 이동위치에 다른 상어 없을 때
-                else:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-            pass
-
-        # 벽까지 가거나 그전에 멈춤
+                    visit[tr][tc] = (ts, td, tz)
+    if td == 2:
+        tsTmp = tsTmp % (2 * R - 2)
+        if tr == R:
+            moving(tr, tc, ts, 1, tz, visit, speed)
+            return
         else:
-            # 이동
-            tr = tr + ts
-            # 이동위치에 다른 상어 있을 때
-            if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                # 지금 이동한 상어가 더 큼
-                if arr[tr][tc][2] < tz:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-                # 원래 있는 상어가 더 큼
-                else:
-                    return
-            # 이동위치에 다른 상어 없을 때
+            if tr + tsTmp > R:
+                tsTmp -= (R - tr)
+                moving(R, tc, ts, 1, tz, visit, tsTmp)
             else:
-                # 이동할 상어가 있을 때 그 상어부터 이동
-                if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                    tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                    arr[tr][tc] = False
-                    moving(tr, tc, tts, ttd, ttz, ttt)
-                arr[tr][tc] = (ts, td, tz, time + 1)
-
-            pass
-        pass
-    elif td == 3:
-        # 벽에 튕겨나옴
-        if tc + ts > C:
-            tsTmp = ts
-
-            # 벽까지 이동
-            tsTmp -= C - tc
-
-            # 방향 변경
-            td = 4
-            # 벽까지 이동 후 남은거리 계산
-            tmp1 = tsTmp // (C - 1)
-            tmp2 = tsTmp - (C - 1) * tmp1
-
-            # 현재 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 그대로
-            if tmp1 % 2 == 0:
-                # 이동
-                tc = C - tmp2
-                # 이동위치에 이동한 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-
-                # 이동위치에 이동한 다른 상어 없을 때
+                tr += tsTmp
+                if visit[tr][tc] != False:
+                    if visit[tr][tc][2] < tz:
+                        visit[tr][tc] = (ts, td, tz)
                 else:
-                    # 이동할 상어가 있을 때 그 상어부터 이동
-                    if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                        tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                        arr[tr][tc] = False
-                        moving(tr, tc, tts, ttd, ttz, ttt)
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-
-            # 반대 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 변경
-            else:
-                td = 3
-                # 이동
-                tc = 1 + tmp2
-                # 이동위치에 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-                # 이동위치에 다른 상어 없을 때
-                else:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-            pass
-
-        # 벽까지 가거나 그전에 멈춤
+                    visit[tr][tc] = (ts, td, tz)
+    if td == 3:
+        tsTmp = tsTmp % (2 * C - 2)
+        if tc == C:
+            moving(tr, tc, ts, 4, tz, visit, speed)
+            return
         else:
-            # 이동
-            tc = tc + ts
-            # 이동위치에 다른 상어 있을 때
-            if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                # 지금 이동한 상어가 더 큼
-                if arr[tr][tc][2] < tz:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-                # 원래 있는 상어가 더 큼
-                else:
-                    return
-            # 이동위치에 다른 상어 없을 때
+            if tc + tsTmp > C:
+                tsTmp -= (C - tc)
+                moving(tr, C, ts, 4, tz, visit, tsTmp)
             else:
-                # 이동할 상어가 있을 때 그 상어부터 이동
-                if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                    tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                    arr[tr][tc] = False
-                    moving(tr, tc, tts, ttd, ttz, ttt)
-                arr[tr][tc] = (ts, td, tz, time + 1)
-
-            pass
-        pass
-    elif td == 4:
-        # 벽에 튕겨나옴
-        if tc - ts < 1:
-            tsTmp = ts
-
-            # 벽까지 이동
-            tsTmp -= tc - 1
-            # 방향 변경
-            td = 3
-
-            # 벽까지 이동 후 남은거리 계산
-            tmp1 = tsTmp // (C - 1)
-            tmp2 = tsTmp - (C - 1) * tmp1
-
-            # 현재 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 그대로
-            if tmp1 % 2 == 0:
-                # 이동
-                tc = 1 + tmp2
-                # 이동위치에 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-                # 이동위치에 다른 상어 없을 때
+                tc += tsTmp
+                if visit[tr][tc] != False:
+                    if visit[tr][tc][2] < tz:
+                        visit[tr][tc] = (ts, td, tz)
                 else:
-                    # 이동할 상어가 있을 때 그 상어부터 이동
-                    if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                        tts, ttd, ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                        arr[tr][tc] = False
-                        moving(tr, tc, tts, ttd, ttz, ttt)
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-
-            # 반대 위치에서 남은 tmp2 거리만큼 이동
-            # 방향 변경
-            else:
-                td = 4
-                # 이동
-                tc = C - tmp2
-                # 이동위치에 다른 상어 있을 때
-                if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                    # 지금 이동한 상어가 더 큼
-                    if arr[tr][tc][2] < tz:
-                        arr[tr][tc] = (ts, td, tz, time + 1)
-                    # 원래 있는 상어가 더 큼
-                    else:
-                        return
-                # 이동위치에 다른 상어 없을 때
-                else:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-            pass
-
-        # 벽까지 가거나 그전에 멈춤
+                    visit[tr][tc] = (ts, td, tz)
+    if td == 4:
+        tsTmp = tsTmp % (2 * C - 2)
+        if tc == 1:
+            moving(tr, tc, ts, 3, tz, visit, tsTmp)
+            return
         else:
-            # 이동
-            tc = tc - ts
-            # 이동위치에 다른 상어 있을 때
-            if arr[tr][tc] != False and arr[tr][tc][3] == time + 1:
-                # 지금 이동한 상어가 더 큼
-                if arr[tr][tc][2] < tz:
-                    arr[tr][tc] = (ts, td, tz, time + 1)
-                # 원래 있는 상어가 더 큼
-                else:
-                    return
-            # 이동위치에 다른 상어 없을 때
+            if tc - tsTmp < 1:
+                tsTmp -= (tc - 1)
+                moving(tr, 1, ts, 3, tz, visit, tsTmp)
             else:
-                # 이동할 상어가 있을 때 그 상어부터 이동
-                if arr[tr][tc] != False and arr[tr][tc][3] == time:
-                    tts,ttd,ttz, ttt = arr[tr][tc][0], arr[tr][tc][1], arr[tr][tc][2], arr[tr][tc][3]
-                    arr[tr][tc] = False
-                    moving(tr, tc, tts,ttd,ttz,ttt)
-                arr[tr][tc] = (ts, td, tz, time + 1)
-
-            pass
-        pass
-
-    pass
+                tc -= tsTmp
+                if visit[tr][tc] != False:
+                    if visit[tr][tc][2] < tz:
+                        visit[tr][tc] = (ts, td, tz)
+                else:
+                    visit[tr][tc] = (ts, td, tz)
 
 
-def moveShark(time):
+def moveShark():
+    visit = [[False] * (C + 1) for _ in range(R + 1)]
     for i in range(1, R + 1):
         for j in range(1, C + 1):
-            if arr[i][j] != False and arr[i][j][3] == time:
+            if arr[i][j] != False:
                 ts, td, tz = arr[i][j][0], arr[i][j][1], arr[i][j][2]
                 arr[i][j] = False
-                moving(i, j, ts, td, tz, time)
-    pass
+                moving(i, j, ts, td, tz, visit, ts)
+    return visit
 
 
 for i in range(1, C + 1):
+    # print(i)
     catch(i)
     # printArr()
-    moveShark(i)
+    arr = moveShark()
     # printArr()
 
 print(result)
