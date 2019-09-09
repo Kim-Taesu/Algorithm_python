@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="499d3814-b669-4b6b-9ae6-95f5c2cc1d43" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulation/bj_17143.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,36 +29,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simulation/bj_17143.py">
+        <entry file="file://$PROJECT_DIR$/simulation/bj_17144.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1106">
-              <caret line="103" column="17" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+            <state relative-caret-position="95">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/programmers/오픈채팅방.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/programmers/실패율.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/simulation/bj_5373.py">
+        <entry file="file://$PROJECT_DIR$/programmers/후보키.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic_programming/bj_1965.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bfs/bj_5014.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="741">
+              <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -163,11 +166,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tree/bj_1068.py" />
-        <option value="$PROJECT_DIR$/dynamic_programming/bj_1502.py" />
-        <option value="$PROJECT_DIR$/dynamic_programming/bj_1520.py" />
-        <option value="$PROJECT_DIR$/dynamic_programming/bj_9461.py" />
-        <option value="$PROJECT_DIR$/dynamic_programming/bj_1890.py" />
         <option value="$PROJECT_DIR$/dynamic_programming/bj_2011.py" />
         <option value="$PROJECT_DIR$/bfs/bj_1260.py" />
         <option value="$PROJECT_DIR$/bfs/bj_2178.py" />
@@ -214,14 +212,18 @@
         <option value="$PROJECT_DIR$/simulation/bj_17143.py" />
         <option value="$PROJECT_DIR$/dynamic_programming/bj_1965.py" />
         <option value="$PROJECT_DIR$/simulation/bj_5373.py" />
+        <option value="$PROJECT_DIR$/simulation/bj_17144.py" />
+        <option value="$PROJECT_DIR$/programmers/오픈채티압ㅇ.py" />
+        <option value="$PROJECT_DIR$/programmers/오픈채팅방.py" />
+        <option value="$PROJECT_DIR$/programmers/실패율.py" />
+        <option value="$PROJECT_DIR$/programmers/후보키.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="-434" />
-    <option name="width" value="943" />
-    <option name="height" value="1087" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1242" />
+    <option name="width" value="1263" />
+    <option name="height" value="1447" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -241,12 +243,7 @@
             <path>
               <item name="Algorithm_python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Algorithm_python" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamic_programming" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Algorithm_python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Algorithm_python" type="462c0819:PsiDirectoryNode" />
-              <item name="simulation" type="462c0819:PsiDirectoryNode" />
+              <item name="programmers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -288,7 +285,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.bj_5373">
+  <component name="RunManager" selected="Python.후보키">
+    <configuration name="후보키" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programmers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programmers/후보키.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="bj_16948" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -355,28 +374,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bj_2573" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bfs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bfs/bj_2573.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="bj_5373" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -401,11 +398,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.후보키" />
         <item itemvalue="Python.bj_5373" />
         <item itemvalue="Python.bj_17143 (1)" />
         <item itemvalue="Python.bj_17143" />
         <item itemvalue="Python.bj_16948" />
-        <item itemvalue="Python.bj_2573" />
       </list>
     </recent_temporary>
   </component>
@@ -452,22 +449,25 @@
       <workItem from="1567518356432" duration="6524000" />
       <workItem from="1567602260461" duration="76000" />
       <workItem from="1567609031104" duration="11228000" />
+      <workItem from="1567671419972" duration="255000" />
+      <workItem from="1567768107419" duration="599000" />
+      <workItem from="1568011217353" duration="3008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="281166000" />
+    <option name="totallyTimeSpent" value="285028000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-434" width="1034" height="1936" extended-state="6" />
+    <frame x="1242" y="0" width="1263" height="1447" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15913758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16375728" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21809101" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21782178" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48365018" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,6 +553,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_python$kruskal.coverage" NAME="kruskal Coverage Results" MODIFIED="1565097700707" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mst" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_1890.coverage" NAME="bj_1890 Coverage Results" MODIFIED="1562028360181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic_programming" />
     <SUITE FILE_PATH="coverage/untitled$2__4_.coverage" NAME="2 (4) Coverage Results" MODIFIED="1560938063598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/python 기말/4분반/201910969_서유림" />
+    <SUITE FILE_PATH="coverage/Algorithm_python$.coverage" NAME="후보키 Coverage Results" MODIFIED="1568030170416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/programmers" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_9461.coverage" NAME="bj_9461 Coverage Results" MODIFIED="1562026774712" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_4991.coverage" NAME="bj_4991 Coverage Results" MODIFIED="1564997273290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_7562.coverage" NAME="bj_7562 Coverage Results" MODIFIED="1566643146914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
@@ -591,28 +592,6 @@
     <SUITE FILE_PATH="coverage/Algorithm_python$BJ_1697.coverage" NAME="BJ_1697 Coverage Results" MODIFIED="1562495801610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bfs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tree/bj_1068.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bfs/test.ipynb" />
-    <entry file="file://$PROJECT_DIR$/dynamic_programming/bj_1520.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_programming/bj_9461.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="9" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_programming/bj_1890.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -904,6 +883,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_programming/bj_1965.py" />
+    <entry file="file://$PROJECT_DIR$/simulation/bj_17143.py" />
+    <entry file="file://$PROJECT_DIR$/simulation/bj_5373.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bfs/bj_5014.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -958,20 +946,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_programming/bj_1965.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simulation/bj_17143.py">
+    <entry file="file://$PROJECT_DIR$/simulation/bj_17144.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="103" column="17" lean-forward="true" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
+        <state relative-caret-position="95">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simulation/bj_5373.py">
+    <entry file="file://$PROJECT_DIR$/programmers/오픈채팅방.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state relative-caret-position="342">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programmers/실패율.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/programmers/후보키.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="21" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
         </state>
       </provider>
     </entry>
