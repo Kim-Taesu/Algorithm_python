@@ -43,7 +43,7 @@ for _ in range(int(input().strip())):
                 top[0][0], bottom[0][0] = bottom[0][0], top[0][0]
                 top[1][0], bottom[1][0] = bottom[1][0], top[1][0]
                 top[2][0], bottom[2][0] = bottom[2][0], top[2][0]
-                
+
                 top[0][0], rear[2][2] = rear[2][2], top[0][0]
                 top[1][0], rear[1][2] = rear[1][2], top[1][0]
                 top[2][0], rear[0][2] = rear[0][2], top[2][0]
