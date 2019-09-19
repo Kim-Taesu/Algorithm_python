@@ -33,8 +33,8 @@
   - [스패닝 트리](baek-joon/spanning_tree)
   - [트리](baek-joon/tree)
 - [프로그래머스](programmers)
-  - [(2017년)KAKAO BLIND RECRUITMENT]({programmers/(2017년)KAKAO BLIND RECRUITMENT})
-  - [(2018년)KAKAO BLIND RECRUITMENT](programmers/(2018년)KAKAO BLIND RECRUITMENT)
+  - [(2017년)KAKAO BLIND RECRUITMENT]({programmers/2017_KAKAO BLIND RECRUITMENT})
+  - [(2018년)KAKAO BLIND RECRUITMENT](programmers/2018_KAKAO BLIND RECRUITMENT)
 
 
 
