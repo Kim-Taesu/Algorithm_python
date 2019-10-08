@@ -21,21 +21,8 @@
 #### 폴더 구성
 
 - [백준 문제 풀이](baek-joon)
-  - [백트랙킹](baek-joon/back_tracking)
-  - [BFS](baek-joon/bfs)
-  - [브루트포스](baek-joon/brute_force)
-  - [자료구조](baek-joon/data_structure)
-  - [다이나믹 프로그래밍](baek-joon/dynamic_programming)
-  - [그리디](baek-joon/greedy)
-  - [최소 신장 트리](baek-joon/mst)
-  - [최단경로](baek-joon/shortest_path)
-  - [시뮬레이션](baek-joon/simulation)
-  - [스패닝 트리](baek-joon/spanning_tree)
-  - [트리](baek-joon/tree)
 - [프로그래머스](programmers)
-  - [(2017년)KAKAO BLIND RECRUITMENT](programmers/2017_KAKAO_BLIND_RECRUITMENT)
-  - [(2018년)KAKAO BLIND RECRUITMENT](programmers/2018_KAKAO_BLIND_RECRUITMENT)
-
+- [SW-Expect-Academy](SW-Expect-Academy)
 
 
 #### 언어
