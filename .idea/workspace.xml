@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d597e54e-f423-4b16-8539-37b5b4d22dc0" name="Default Changelist" comment="" />
+    <list default="true" id="d597e54e-f423-4b16-8539-37b5b4d22dc0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +61,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Python.bj_12969">
+  <component name="RunManager" selected="Python.bj_14238">
     <configuration name="bj_12969" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +76,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baek-joon/dynamic_programming/bj_12969.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bj_14238" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/baek-joon/dynamic_programming" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/baek-joon/dynamic_programming/bj_14238.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,35 +172,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="bj_5213(미완성)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/baek-joon/bfs" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\Kim-Taesu\Desktop\kts\project\Algorithm_python\baek-joon\bfs\bj_5213.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.bj_14238" />
         <item itemvalue="Python.bj_12969" />
         <item itemvalue="Python.bj_3184" />
         <item itemvalue="Python.bj_15662" />
         <item itemvalue="Python.bj_4811" />
-        <item itemvalue="Python.bj_5213(미완성)" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +222,9 @@
       <workItem from="1575362925006" duration="7291000" />
       <workItem from="1575433892073" duration="1270000" />
       <workItem from="1575435277240" duration="46000" />
-      <workItem from="1575435555176" duration="5947000" />
+      <workItem from="1575435555176" duration="6427000" />
+      <workItem from="1575521178574" duration="65000" />
+      <workItem from="1575877743581" duration="5731000" />
     </task>
     <task id="LOCAL-00001" summary="update 특이한 자석">
       <created>1570514544870</created>
@@ -257,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575372750244</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add ABC">
+      <created>1575441662535</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575441662535</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,25 +280,38 @@
     <MESSAGE value="add 퇴사2" />
     <MESSAGE value="add 과외맨" />
     <MESSAGE value="add 양, 톱니바퀴2, 알약" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 양, 톱니바퀴2, 알약" />
+    <MESSAGE value="add ABC" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ABC" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1188" height="460" key="GridCell.Tab.0.bottom" timestamp="1575441554193">
+    <state x="1459" y="316" key="CommitChangelistDialog2" timestamp="1575441661146">
       <screen x="0" y="0" width="2467" height="1440" />
     </state>
-    <state width="1188" height="460" key="GridCell.Tab.0.bottom/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575441554193" />
-    <state width="1188" height="460" key="GridCell.Tab.0.center" timestamp="1575441554191">
+    <state x="1459" y="316" key="CommitChangelistDialog2/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575441661146" />
+    <state x="1630" y="474" key="FileChooserDialogImpl" timestamp="1575521242374">
       <screen x="0" y="0" width="2467" height="1440" />
     </state>
-    <state width="1188" height="460" key="GridCell.Tab.0.center/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575441554191" />
-    <state width="1188" height="460" key="GridCell.Tab.0.left" timestamp="1575441554191">
+    <state x="1630" y="474" key="FileChooserDialogImpl/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575521242374" />
+    <state width="1188" height="457" key="GridCell.Tab.0.bottom" timestamp="1575887289795">
       <screen x="0" y="0" width="2467" height="1440" />
     </state>
-    <state width="1188" height="460" key="GridCell.Tab.0.left/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575441554191" />
-    <state width="1188" height="460" key="GridCell.Tab.0.right" timestamp="1575441554192">
+    <state width="1188" height="457" key="GridCell.Tab.0.bottom/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575887289795" />
+    <state width="1188" height="457" key="GridCell.Tab.0.center" timestamp="1575887289794">
       <screen x="0" y="0" width="2467" height="1440" />
     </state>
-    <state width="1188" height="460" key="GridCell.Tab.0.right/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575441554192" />
+    <state width="1188" height="457" key="GridCell.Tab.0.center/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575887289794" />
+    <state width="1188" height="457" key="GridCell.Tab.0.left" timestamp="1575887289793">
+      <screen x="0" y="0" width="2467" height="1440" />
+    </state>
+    <state width="1188" height="457" key="GridCell.Tab.0.left/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575887289793" />
+    <state width="1188" height="457" key="GridCell.Tab.0.right" timestamp="1575887289794">
+      <screen x="0" y="0" width="2467" height="1440" />
+    </state>
+    <state width="1188" height="457" key="GridCell.Tab.0.right/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575887289794" />
+    <state x="1442" y="455" key="Vcs.Push.Dialog.v2" timestamp="1575441670631">
+      <screen x="0" y="0" width="2467" height="1440" />
+    </state>
+    <state x="1442" y="455" key="Vcs.Push.Dialog.v2/0.0.2467.1440/2560.0.1858.1080@0.0.2467.1440" timestamp="1575441670631" />
     <state x="1654" y="639" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1575436167485">
       <screen x="0" y="0" width="2467" height="1440" />
     </state>
@@ -314,6 +338,7 @@
     <SUITE FILE_PATH="coverage/Algorithm_python$4013__.coverage" NAME="4013_특이한 자석 Coverage Results" MODIFIED="1570514421955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SW-Expect-Academy" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_4811.coverage" NAME="bj_4811 Coverage Results" MODIFIED="1575370262133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baek-joon/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_15653.coverage" NAME="bj_15653 Coverage Results" MODIFIED="1573449245466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baek-joon/bfs" />
+    <SUITE FILE_PATH="coverage/Algorithm_python$bj_14238.coverage" NAME="bj_14238 Coverage Results" MODIFIED="1575887289787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baek-joon/dynamic_programming" />
     <SUITE FILE_PATH="coverage/Algorithm_python$5658_.coverage" NAME="5658_보물상자비밀번호 Coverage Results" MODIFIED="1569375135188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SW-Expect-Academy" />
     <SUITE FILE_PATH="coverage/Algorithm_python$2382__.coverage" NAME="2382_미생물 격리 Coverage Results" MODIFIED="1570793505582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SW-Expect-Academy" />
     <SUITE FILE_PATH="coverage/Algorithm_python$bj_15662.coverage" NAME="bj_15662 Coverage Results" MODIFIED="1575370523035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baek-joon/simulation" />
