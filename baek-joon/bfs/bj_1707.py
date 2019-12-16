@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 
 def dfs(now, group, arr, check):
-    print(now,group,check)
+    print(now, group, check)
     check[now] = group
     for i in arr[now]:
         if check[i] == 0:

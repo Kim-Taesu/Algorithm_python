@@ -1,4 +1,3 @@
-
 def find(w, h):
     global dp
     if dp[w][h]: return dp[w][h]
@@ -13,7 +12,7 @@ def find(w, h):
 
 while True:
     N = int(input())
-    dp = [[False] * (N+1) for _ in range(N+1)]
+    dp = [[False] * (N + 1) for _ in range(N + 1)]
     if N == 0: break
 
     print(find(N, 0))

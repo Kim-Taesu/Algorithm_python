@@ -30,12 +30,11 @@ dfs(v)
 
 print()
 queue.append(v)
-count=0
+count = 0
 while (queue):
     next = queue.popleft()
-    if(vBfs[next]==0): print(next, end=' ')
+    if (vBfs[next] == 0): print(next, end=' ')
     vBfs[next] = 1
     for i in range(1, n + 1):
         if (arr[next][i] and vBfs[i] == 0):
             queue.append(i)
-

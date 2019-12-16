@@ -11,6 +11,7 @@ for i in range(T):
 
 K = int(input().strip())
 
+
 def move(num, dTmp):
     global arr
     # print(num, dTmp)

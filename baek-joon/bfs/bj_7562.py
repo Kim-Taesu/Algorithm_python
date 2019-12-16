@@ -34,4 +34,4 @@ for _ in range(int(input().strip())):
 
             if nx >= 0 and nx < N and ny >= 0 and ny < N and not visit[nx][ny]:
                 queue.append((nx, ny))
-                arr[nx][ny]=arr[cx][cy]+1
+                arr[nx][ny] = arr[cx][cy] + 1

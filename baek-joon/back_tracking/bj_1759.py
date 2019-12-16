@@ -7,7 +7,6 @@ sys.setrecursionlimit(10 ** 6)
 
 filt = [ord('a') - 97, ord('e') - 97, ord('i') - 97, ord('o') - 97, ord('u') - 97]
 
-
 input = sys.stdin.readline
 
 L, C = map(int, input().strip().split())
@@ -17,6 +16,8 @@ for i in range(len(alpha)):
     alpha[i] = ord(alpha[i]) - 97
 alpha.sort()
 check = [0] * 26
+
+
 def dfs(val, arr, ja, mo):
     if len(arr) == L:
         if mo < 1 or ja < 2: return
@@ -31,9 +32,9 @@ def dfs(val, arr, ja, mo):
 
         arr.append(i)
         if i in filt:
-            dfs(i, arr, ja, mo+1)
+            dfs(i, arr, ja, mo + 1)
         else:
-            dfs(i, arr, ja+1, mo)
+            dfs(i, arr, ja + 1, mo)
         arr.pop()
 
     check[val] = False

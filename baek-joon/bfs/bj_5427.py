@@ -38,9 +38,9 @@ def bfs():
                 print(visit[x][y])
                 return
 
-            if not visit[nx][ny] and arr[nx][ny] !='#':
-                queue.append((nx,ny,f))
-                visit[nx][ny]=visit[x][y]+1
+            if not visit[nx][ny] and arr[nx][ny] != '#':
+                queue.append((nx, ny, f))
+                visit[nx][ny] = visit[x][y] + 1
 
     print('IMPOSSIBLE')
     pass

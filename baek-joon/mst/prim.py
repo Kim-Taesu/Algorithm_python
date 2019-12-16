@@ -38,15 +38,14 @@ node = []
 
 heapq.heappush(heap, (0, S))
 
-sum=0
+sum = 0
 while not len(node) == V:
     weight, start = heapq.heappop(heap)
     node.append(start)
-    sum+=weight
+    sum += weight
 
     for i in range(V):
         if arr[start][i] != INF and not i in node:
             heapq.heappush(heap, (arr[start][i], i))
 
-
-print(node,heap,sum)
+print(node, heap, sum)

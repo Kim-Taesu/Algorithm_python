@@ -49,15 +49,14 @@ def dijkstra(K, V, graph):
                 m = memory[j]
                 N = j
 
-        if m==INF:
+        if m == INF:
             break
 
-
         for j in range(V):
-            if visit[j]:continue
-            via = memory[N]+graph[N][j]
-            if memory[j]>via:
-                memory[j]=visit
+            if visit[j]: continue
+            via = memory[N] + graph[N][j]
+            if memory[j] > via:
+                memory[j] = visit
 
     return d
 

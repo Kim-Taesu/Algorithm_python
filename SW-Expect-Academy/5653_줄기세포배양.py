@@ -1,7 +1,4 @@
-
 T = int(input().strip())
-
-
 
 for test_case in range(1, T + 1):
     dx = [-1, 1, 0, 0]
@@ -71,4 +68,4 @@ for test_case in range(1, T + 1):
 
         time += 1
 
-    print('#%d %d' %(test_case,len(arr)))
+    print('#%d %d' % (test_case, len(arr)))

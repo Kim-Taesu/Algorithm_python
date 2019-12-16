@@ -28,17 +28,16 @@ def calc(n1, n2, index):
 
 min = 0
 max = 0
-flag=True
-
+flag = True
 
 
 def go(result, op, count):
     if (count == total):
-        global flag, min,max
-        if(flag):
-            min=result
-            max=result
-            flag=False
+        global flag, min, max
+        if (flag):
+            min = result
+            max = result
+            flag = False
             return
 
         if (result > max): max = result

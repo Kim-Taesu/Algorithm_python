@@ -8,15 +8,16 @@ X = [-1, 1, 0, 0]
 Y = [0, 0, -1, 1]
 
 count = 0
-def dfs(x, y):
 
-    arr[x][y]=-1
+
+def dfs(x, y):
+    arr[x][y] = -1
     for z in range(len(X)):
         newX = x + X[z]
         newY = y + Y[z]
 
         if (newX >= 0 and newX < n and newY >= 0 and newY < m and arr[newX][newY] == 1):
-            dfs(newX,newY)
+            dfs(newX, newY)
     pass
 
 
@@ -33,6 +34,6 @@ for z in range(t):
         for j in range(m):
             if (arr[i][j] == 1):
                 dfs(i, j)
-                count+=1
+                count += 1
 
     print(count)

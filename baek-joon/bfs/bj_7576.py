@@ -16,10 +16,12 @@ for i in range(n):
         arr[i][j] = line[j]
         if (arr[i][j] == 1): queue.append((i, j))
 
+
 def isOk(x, y):
     return x >= 0 and x < n and y >= 0 and y < m and arr[x][y] == 0
 
-day=0
+
+day = 0
 
 while (queue):
     # print(queue)
@@ -35,11 +37,11 @@ while (queue):
                 queue.append((newX, newY))
                 arr[newX][newY] = 1
 
-    day+=1
+    day += 1
 
 for i in arr:
-    if(0 in i):
+    if (0 in i):
         print(-1)
         exit(0)
 
-print(day-1)
+print(day - 1)

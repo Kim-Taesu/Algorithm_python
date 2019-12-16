@@ -25,11 +25,9 @@ def bfs(i, j):
         for q in range(4):
             nx = cx + dx[q]
             ny = cy + dy[q]
-            if nx >= 0 and nx < N and ny >= 0 and ny < M and visit[nx][ny] == -1 and arr[nx][ny]=='L':
+            if nx >= 0 and nx < N and ny >= 0 and ny < M and visit[nx][ny] == -1 and arr[nx][ny] == 'L':
                 queue.append((nx, ny))
                 visit[nx][ny] = visit[cx][cy] + 1
-
-
 
     for i in visit:
         result = max(result, max(i))

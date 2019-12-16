@@ -39,5 +39,4 @@ def go(x, y):
     return dp[x][y]
 
 
-
 print(go(N - 1, N - 1))

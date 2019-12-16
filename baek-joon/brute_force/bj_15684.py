@@ -17,4 +17,3 @@ for i in range(m):
 
 for i in map:
     print(i)
-

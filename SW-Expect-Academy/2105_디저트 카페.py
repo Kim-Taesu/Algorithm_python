@@ -11,14 +11,13 @@ def go(i, j, val):
     global N, arr, visit, si, sj, result
     # print(i, j, val)
 
-
     for z in range(4):
         ni = i + dx[z]
         nj = j + dy[z]
 
-        if ni==si and nj==sj and len(val)>2:
+        if ni == si and nj == sj and len(val) > 2:
             # print('+find', val)
-            result=max(result,len(val))
+            result = max(result, len(val))
             continue
 
         if 0 <= ni < N and 0 <= nj < N and not visit[ni][nj] and arr[ni][nj] not in val:

@@ -5,7 +5,7 @@ def dfs(line, result):
     # print(line, result)
     if len(result) == 6:
         for q in result:
-            print(q,end=' ')
+            print(q, end=' ')
         print()
         return
 

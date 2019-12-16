@@ -24,7 +24,6 @@ queue.append((sx, sy, 0))
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
-
 while queue:
     # print(queue)
     # for z in arr:
@@ -47,7 +46,7 @@ while queue:
 
         if nx >= 0 and nx < R and ny >= 0 and ny < C and arr[nx][ny] != 'X':
             if f == 1:
-                if arr[nx][ny] != 'D' and arr[nx][ny]!='*':
+                if arr[nx][ny] != 'D' and arr[nx][ny] != '*':
                     arr[nx][ny] = '*'
                     queue.append((nx, ny, 1))
             if f == 0:

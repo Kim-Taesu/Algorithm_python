@@ -8,7 +8,7 @@ arr = [
     ['X', 'O', 'Q', 'R', 'S']
 ]
 
-words = ['PRETTY', 'GIRL', 'REPEAT','URPRETTEAIGXXTONQZRYS']
+words = ['PRETTY', 'GIRL', 'REPEAT', 'URPRETTEAIGXXTONQZRYS']
 
 dx = [0, 0, 1, -1, -1, -1, 1, 1]
 dy = [1, -1, 0, 0, -1, 1, 1, -1]
@@ -24,7 +24,6 @@ def bfs(i, j, word):
 
     while queue:
         cx, cy, index = queue.popleft()
-
 
         if index == len(word) - 1:
             check = True

@@ -5,7 +5,7 @@ lastPeople = (0, 0)
 
 def go(pNum, cur):
     if len(cur) == pNum:
-        tmp=list(map(int, list(cur)))
+        tmp = list(map(int, list(cur)))
         cases.append(tmp)
         return
     for i in range(2):
@@ -59,8 +59,6 @@ for test_case in range(1, T + 1):
             # print('++',tmp)
             # print()
 
-
-
             delS = []
 
             # 학생 위치 파악
@@ -96,11 +94,10 @@ for test_case in range(1, T + 1):
                 for d in delT:
                     t.remove(d)
 
-
             time += 1
 
         # 계단에 있는 사람 다 내려보내기
-        while len(tmp[0])>0 or len(tmp[1]):
+        while len(tmp[0]) > 0 or len(tmp[1]):
             # print('++time',time)
             # print('++',tmp)
             # 계단 내려가기
@@ -117,9 +114,9 @@ for test_case in range(1, T + 1):
                 # 다 내려간사람 지움
                 for d in delT:
                     t.remove(d)
-            time+=1
+            time += 1
 
-        result=min(result,time)
+        result = min(result, time)
         # print('time is ',time)
 
     print('#%d %d' % (test_case, result))

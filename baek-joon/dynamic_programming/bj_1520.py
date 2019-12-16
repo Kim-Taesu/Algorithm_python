@@ -19,13 +19,12 @@ def isRange(x, y):
 
 
 def go(x, y, value):
-
     if (x == m - 1 and y == n - 1):
         for i in dp:
             print(i)
         print()
         global count
-        count+=1
+        count += 1
         return
 
     if (dp[x][y] == 0):
@@ -39,6 +38,7 @@ def go(x, y, value):
                 go(newX, newY, 1)
 
     return
+
 
 for i in dp:
     print(i)

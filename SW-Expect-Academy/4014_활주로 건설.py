@@ -36,7 +36,7 @@ for test_case in range(1, T + 1):
 
             # 경사가 큼
             elif line[l] < line[l + 1]:
-                if line[l] + 1 != line[l+1]:
+                if line[l] + 1 != line[l + 1]:
                     isOk = False
                     break
 
@@ -89,7 +89,7 @@ for test_case in range(1, T + 1):
             # 경사가 큼
             elif line[l] < line[l + 1]:
 
-                if line[l] + 1 != line[l+1]:
+                if line[l] + 1 != line[l + 1]:
                     isOk = False
                     break
 

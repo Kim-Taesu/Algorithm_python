@@ -25,4 +25,3 @@ for _ in range(int(input())):
                 visit[nx[i]] = x
                 cmd[nx[i]] = C[i]
                 q.append(nx[i])
-

@@ -20,4 +20,4 @@ for q in range(1, n):
         in2 = costI + dp[q - 1][int((i + 2) % 3)]
         dp[q][i] = min(in1, in2)
 
-print(min(dp[n-1]))
+print(min(dp[n - 1]))

@@ -8,7 +8,7 @@ queue = deque()
 queue.append(n)
 
 time = [-1 for i in range(100009)]
-time[n]=0
+time[n] = 0
 
 
 def isRange(x):

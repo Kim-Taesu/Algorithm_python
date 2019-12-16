@@ -16,7 +16,7 @@ def solution(food_times, k):
 
     for i in index:
         tmp = (i[0] - before) * l
-        before =i[0]
+        before = i[0]
         # print(k,tmp,before)
         # print(food_times)
 
@@ -24,19 +24,19 @@ def solution(food_times, k):
             k -= tmp
 
         else:
-            k%=l
-            cnt=-1
+            k %= l
+            cnt = -1
             for f in range(len(food_times)):
-                if food_times[f] == ('n','n'):
+                if food_times[f] == ('n', 'n'):
                     continue
                 else:
-                    cnt+=1
-                if cnt==k:
-                    answer=f+1
+                    cnt += 1
+                if cnt == k:
+                    answer = f + 1
                     break
             break
 
-        food_times[i[1]]=('n','n')
+        food_times[i[1]] = ('n', 'n')
         l -= 1
 
     return answer

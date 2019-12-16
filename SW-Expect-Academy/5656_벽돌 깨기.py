@@ -98,7 +98,7 @@ def drop(result, N, W, H, arr):
             # print()
 
             # 구슬 드롭
-            result = min(result,drop(result,N - 1, W, H, arrTmp))
+            result = min(result, drop(result, N - 1, W, H, arrTmp))
     return result
 
 
@@ -109,5 +109,5 @@ for test_case in range(1, T + 1):
         arr.append(list(map(int, input().strip().split(' '))))
     result = W * H
     answer = drop(result, N, W, H, arr)
-    if result==answer: answer=0
-    print('#'+str(test_case),str(answer))
+    if result == answer: answer = 0
+    print('#' + str(test_case), str(answer))

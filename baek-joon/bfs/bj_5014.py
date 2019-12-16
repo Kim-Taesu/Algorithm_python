@@ -27,7 +27,7 @@ while queue:
     if now + U <= F and not visit[now + U]:
         queue.append((now + U, count + 1))
         visit[now + U] = True
-    if now - D > 0 and not visit[now -D]:
+    if now - D > 0 and not visit[now - D]:
         queue.append((now - D, count + 1))
         visit[now - D] = True
 

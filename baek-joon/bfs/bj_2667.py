@@ -24,7 +24,7 @@ def bfs(i, j):
     queue = deque()
     queue.append((i, j))
     count = 0
-    arr[i][j]=-1
+    arr[i][j] = -1
     while (queue):
         print(queue)
         x, y = queue.popleft()
@@ -48,4 +48,4 @@ for i in range(n):
 
 result.sort()
 print(len(result))
-for i in result:print(i)
+for i in result: print(i)

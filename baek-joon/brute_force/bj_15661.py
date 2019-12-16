@@ -6,7 +6,7 @@ N = int(input())
 
 arr = []
 for _ in range(N):
-    arr.append(list(map(int,input().strip().split(' '))))
+    arr.append(list(map(int, input().strip().split(' '))))
 
 result = sys.maxsize
 
@@ -35,5 +35,5 @@ for i in range(1, len(items)):
                     linkScore += arr[link[l1]][link[l2]]
 
         # print(startScore, linkScore)
-        result=min(result,abs(startScore-linkScore))
+        result = min(result, abs(startScore - linkScore))
 print(result)

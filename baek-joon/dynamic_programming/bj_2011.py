@@ -11,12 +11,11 @@ if (len(line2) == 1 and line2[0] == 0):
     print(0)
     exit()
 
-
 line = [0 for i in range(max)]
 dp = [0 for i in range(max)]
 
 for i in range(1, len(line2) + 1):
-    line[i]=int(line2[i-1])
+    line[i] = int(line2[i - 1])
 
 dp[0] = 1
 

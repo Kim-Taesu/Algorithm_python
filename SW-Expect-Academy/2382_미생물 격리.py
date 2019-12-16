@@ -111,7 +111,7 @@ for test_case in range(1, T + 1):
                     winnerCc = ttmp[0]
                     winnerD = ttmp[1]
 
-            arr[1][key[0]][key[1]] = (winnerC,winnerD)
+            arr[1][key[0]][key[1]] = (winnerC, winnerD)
 
             # 바이러스 정보 최신화
         for i in range(N):

@@ -102,11 +102,11 @@ while queue:
         if rnx == crx and rny == cry and bnx == cbx and bny == cby: continue
 
         # 과거에 왔는지 비교
-        if ((rnx,rny),(bnx,bny)) in visit:
+        if ((rnx, rny), (bnx, bny)) in visit:
             continue
 
         else:
-            visit.append(((rnx,rny),(bnx,bny)))
+            visit.append(((rnx, rny), (bnx, bny)))
 
         data = ((rnx, rny), (bnx, bny), cnt + 1)
         if data not in queue: queue.append(data)

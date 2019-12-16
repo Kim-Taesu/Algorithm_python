@@ -32,13 +32,14 @@ def dfs(i, j, h):
 
     if visit[i][j] or arr[i][j] <= h: return
 
-    visit[i][j]=True
+    visit[i][j] = True
 
     for z in range(4):
-        newX = i+dx[z]
+        newX = i + dx[z]
         newY = j + dy[z]
 
-        dfs(newX,newY,h)
+        dfs(newX, newY, h)
+
 
 pass
 

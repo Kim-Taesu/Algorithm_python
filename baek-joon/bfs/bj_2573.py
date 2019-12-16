@@ -85,7 +85,6 @@ while queue:
     # 덩어리 개수
     land = 0
 
-
     for i in range(N):
         for j in range(M):
             # 빙산이 있고 방문하지 않았던 빙산이면

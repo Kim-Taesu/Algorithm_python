@@ -1,5 +1,5 @@
-from string import ascii_lowercase
 import math
+from string import ascii_lowercase
 
 alpha = list(ascii_lowercase)
 

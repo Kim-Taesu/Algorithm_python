@@ -8,11 +8,11 @@ T = int(sys.stdin.readline())
 for i in range(T):
     num = int(sys.stdin.readline())
 
-    if(num==0):
-        print(1,0)
+    if (num == 0):
+        print(1, 0)
         continue
-    if(num==1):
-        print(0,1)
+    if (num == 1):
+        print(0, 1)
         continue
 
     arr_z = [0 for i in range(num + 1)]
@@ -28,4 +28,4 @@ for i in range(T):
         arr_z[i] = arr_z[i - 1] + arr_z[i - 2]
         arr_o[i] = arr_o[i - 1] + arr_o[i - 2]
 
-    print(arr_z[num],arr_o[num])
+    print(arr_z[num], arr_o[num])

@@ -2,8 +2,8 @@ import sys
 
 INF = sys.maxsize
 
-V=int(input())
-E=int(input())
+V = int(input())
+E = int(input())
 
 input = sys.stdin.readline
 

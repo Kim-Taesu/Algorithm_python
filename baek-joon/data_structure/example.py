@@ -1,4 +1,4 @@
-a =[]
+a = []
 a.append("a")
 print(a)
 a.clear()
@@ -6,7 +6,7 @@ print(a)
 a.append(1)
 print(a)
 
-a.insert(0,"first")
+a.insert(0, "first")
 print(a)
 
 a.extend(a)

@@ -28,7 +28,6 @@ def find(path, visit, length):
         # 재귀
         cand = find(path, visit, length + arr[here][next])
 
-
         ret = min(ret, cand)
         visit[next] = False
         path.pop()

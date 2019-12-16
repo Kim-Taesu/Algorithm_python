@@ -14,7 +14,7 @@ for z in range(T):
     dp[1] = 1
     dp[2] = 1
 
-    for i in range(3, q+1):
+    for i in range(3, q + 1):
         dp[i] = dp[i - 3] + dp[i - 2]
 
     print(dp[q])

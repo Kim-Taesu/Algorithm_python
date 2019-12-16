@@ -18,4 +18,4 @@ for test_case in range(1, T + 1):
         result[i] = int(result[i], 16)
 
     result.sort(reverse=True)
-    print('#'+str(test_case),result[K-1])
+    print('#' + str(test_case), result[K - 1])

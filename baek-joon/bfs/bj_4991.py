@@ -54,5 +54,5 @@ while True:
                     if not visit[nx][ny][d]:
                         queue.append((d, nx, ny));
                         visit[nx][ny][d] = visit[x][y][d] + 1;
-    if check==0:
+    if check == 0:
         print(-1)

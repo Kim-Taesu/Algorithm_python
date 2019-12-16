@@ -19,7 +19,6 @@ dx = [-1, 1, 0, 0, 0, 0]
 dy = [0, 0, -1, 1, 0, 0]
 dh = [0, 0, 0, 0, -1, 1]
 
-
 while virus:
     x, y, z = virus.popleft()
     for i in range(6):
@@ -42,5 +41,6 @@ def isCheck():
                 return -1
             result = max(result, max(arr[i][j]))
     return result - 1
+
 
 print(isCheck())

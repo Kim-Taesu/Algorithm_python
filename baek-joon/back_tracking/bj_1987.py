@@ -35,6 +35,8 @@ def dfs(x, y, w):
             dfs(nx, ny, w + 1)
 
     visit[arr[x][y]] = False
+
+
 visit[arr[0][0]] = True
 dfs(0, 0, 1)
 
