@@ -76,7 +76,6 @@ for index, s in enumerate(sticks):
                 arr[i][j] = '.'
                 clusters.append((i, j))
 
-
     # 분리된 클러스터 없으면 pass
     if not clusters:
         continue

@@ -1,7 +1,6 @@
 import sys
 
 sys.setrecursionlimit(10 ** 6)
-import heapq
 
 input = sys.stdin.readline
 N = int(input().strip())

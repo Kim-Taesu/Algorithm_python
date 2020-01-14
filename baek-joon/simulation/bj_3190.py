@@ -75,8 +75,6 @@ while True:
     else:
         px, py = snake.popleft()
         arr[px][py] = 0
-        arr[nx][ny]=2
-
-
+        arr[nx][ny] = 2
 
 print(timer)

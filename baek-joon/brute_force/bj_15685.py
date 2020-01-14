@@ -1,5 +1,3 @@
-from collections import deque
-
 N = int(input())
 
 direction = {
@@ -9,7 +7,7 @@ direction = {
     3: (1, 0)
 }
 
-max_value=101
+max_value = 101
 arr = [[False] * max_value for _ in range(max_value)]
 
 result = 0
@@ -18,7 +16,7 @@ for _ in range(N):
     tmp = [d]
 
     for i in range(g):
-        for j in range(len(tmp)-1,-1,-1):
+        for j in range(len(tmp) - 1, -1, -1):
             tmp.append((tmp[j] + 1) % 4)
 
     # print(tmp)
@@ -29,10 +27,8 @@ for _ in range(N):
         y, x = y + direction[t][0], x + direction[t][1]
         arr[y][x] = True
 
-
-
-for i in range(max_value-1):
-    for j in range(max_value-1):
+for i in range(max_value - 1):
+    for j in range(max_value - 1):
         if arr[i][j] and arr[i + 1][j] and arr[i][j + 1] and arr[i + 1][j + 1]:
             result += 1
 
