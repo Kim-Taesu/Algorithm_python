@@ -53,7 +53,7 @@ def go(number_list, tmp, index):
                 visit[i][j] = arr[i][j]
 
         for t in tmp:
-            print('\t',t)
+            print('\t', t)
             cx, cy, cds = t
             for cd in cds:
                 nx, ny = cx, cy
@@ -64,7 +64,7 @@ def go(number_list, tmp, index):
                         break
                     if visit[nx][ny] in ['0', '#']:
                         visit[nx][ny] = '#'
-                    elif visit[nx][ny] in ['1','2','3','4','5']:
+                    elif visit[nx][ny] in ['1', '2', '3', '4', '5']:
                         continue
                     else:
                         break

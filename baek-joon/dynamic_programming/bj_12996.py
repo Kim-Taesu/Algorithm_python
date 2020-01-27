@@ -1,10 +1,10 @@
 S, A, B, C = map(int, input().strip().split(' '))
 
-dp = [[[[-1] * 51 for _ in range(51)] for _ in range(51)] for _ in range(51)]
+visit = [[[[-1] * 51 for _ in range(51)] for _ in range(51)] for _ in range(51)]
 
 
 def dfs(s, a, b, c):
-    global dp, A, B, C
+    global visit, A, B, C
     # 기저 사례
     if s == 0:
         if a == 0 and b == 0 and c == 0:

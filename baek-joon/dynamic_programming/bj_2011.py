@@ -12,24 +12,24 @@ if (len(line2) == 1 and line2[0] == 0):
     exit()
 
 line = [0 for i in range(max)]
-dp = [0 for i in range(max)]
+visit = [0 for i in range(max)]
 
 for i in range(1, len(line2) + 1):
     line[i] = int(line2[i - 1])
 
-dp[0] = 1
+visit[0] = 1
 
 for i in range(1, len(line2) + 1):
     if (line[i] >= 1 and line[i] <= 9):
-        dp[i] = (dp[i - 1] + dp[i]) % mod
+        visit[i] = (visit[i - 1] + visit[i]) % mod
 
     print(line)
-    print(dp)
+    print(visit)
     if (i == 1):
         continue
 
     temp = line[i] + line[i - 1] * 10
     if (10 <= temp and temp <= 26):
-        dp[i] = (dp[i - 2] + dp[i]) % mod
+        visit[i] = (visit[i - 2] + visit[i]) % mod
 
-print(dp[len(line2)])
+print(visit[len(line2)])

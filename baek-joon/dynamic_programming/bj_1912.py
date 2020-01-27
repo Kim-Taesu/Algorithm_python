@@ -5,13 +5,13 @@ n = int(sys.stdin.readline())
 line = list(map(int, sys.stdin.readline().strip().split(' ')))
 print(line)
 
-dp = [0 for i in range(len(line))]
-dp[0] = line[0]
+visit = [0 for i in range(len(line))]
+visit[0] = line[0]
 
 for i in range(1, len(line)):
-    dp[i] = line[i]
-    if (dp[i] < dp[i - 1] + dp[i]):
-        dp[i] = dp[i - 1] + dp[i]
+    visit[i] = line[i]
+    if (visit[i] < visit[i - 1] + visit[i]):
+        visit[i] = visit[i - 1] + visit[i]
 
-print(dp)
-print(max(dp))
+print(visit)
+print(max(visit))

@@ -10,27 +10,28 @@
 n = int(input().strip())
 
 arr = []
-dp = [[-1] * n for _ in range(n)]
+visit = [[False] * n for _ in range(n)]
 for _ in range(n):
     arr.append(list(input().strip()))
 
 
 def dfs(i, j):
+    print(i, j)
+    global arr
     # 기저사례
     if i == n - 1 and j == n - 1:
-        print('find!')
-        return 1
-
-    # 범위 체크
-    if i < 0 or i >= n or j < 0 or j >= n: return 0
+        return True
+    if i >= n or j >= n:
+        return False
 
     # 캐쉬 저장 여부 확인
-    if dp[i][j] != -1: return dp[i][j]
+    if visit[i][j]:
+        return visit[i][j]
 
     # 캐쉬 저장
-    dp[i][j] = dfs(i + int(arr[i][j]), j) + dfs(i, j + int(arr[i][j]))
-
-    return dp[i][j]
+    else:
+        visit[i][j] = dfs(i + int(arr[i][j]), j) or dfs(i, j + int(arr[i][j]))
+        return visit[i][j]
 
 
 result = dfs(0, 0)

@@ -1,7 +1,7 @@
 n = int(input())
-dp = [0 for _ in range(1001)]
-dp[1] = 1
-dp[0] = 1
+visit = [0 for _ in range(1001)]
+visit[1] = 1
+visit[0] = 1
 for i in range(2, n + 1):
-    dp[i] = (dp[i - 1] + dp[i - 2] * 2) % 10007
-print(dp[n])
+    visit[i] = (visit[i - 1] + visit[i - 2] * 2) % 10007
+print(visit[n])
