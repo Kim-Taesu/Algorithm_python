@@ -34,9 +34,9 @@ def dfs(i, j):
         return visit[i][j]
 
 
-result = dfs(0, 0)
+sample = dfs(0, 0)
 
-if result > 0:
-    print(result)
+if sample > 0:
+    print(sample)
 else:
     print(-1)

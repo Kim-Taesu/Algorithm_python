@@ -24,7 +24,7 @@ def find(x, y):
 
 
 for test_case in range(1, T + 1):
-    result = 0
+    sample = 0
 
     M, A = map(int, input().strip().split(' '))
 
@@ -67,13 +67,13 @@ for test_case in range(1, T + 1):
             tmp2 = 0
             for q in aFind:
                 tmp2 = max(tmp2, q[1])
-            result += tmp2
+            sample += tmp2
 
         elif not aFind and bFind:
             tmp2 = 0
             for q in bFind:
                 tmp2 = max(tmp2, q[1])
-            result += tmp2
+            sample += tmp2
 
         elif aFind and bFind:
             tmp2 = 0
@@ -85,6 +85,6 @@ for test_case in range(1, T + 1):
                     # 다른 지역
                     else:
                         tmp2 = max(tmp2, q[1] + w[1])
-            result += tmp2
+            sample += tmp2
 
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))

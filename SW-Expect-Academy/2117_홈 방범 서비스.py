@@ -18,7 +18,7 @@ def find(house, K):
 
 
 for test_case in range(1, T + 1):
-    result = 0
+    sample = 0
 
     N, M = map(int, input().strip().split(' '))
 
@@ -46,8 +46,8 @@ for test_case in range(1, T + 1):
                 if inRangeHouse * M - cost >= 0:
                     # print((i, j))
                     # print('+in range', inRangeHouse)
-                    result = max(result, inRangeHouse)
+                    sample = max(sample, inRangeHouse)
 
         K += 1
 
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))

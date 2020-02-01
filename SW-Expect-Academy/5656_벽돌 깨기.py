@@ -105,7 +105,7 @@ for test_case in range(1, T + 1):
     arr = []
     for i in range(H):
         arr.append(list(map(int, input().strip().split(' '))))
-    result = W * H
-    answer = drop(result, N, W, H, arr)
-    if result == answer: answer = 0
+    sample = W * H
+    answer = drop(sample, N, W, H, arr)
+    if sample == answer: answer = 0
     print('#' + str(test_case), str(answer))

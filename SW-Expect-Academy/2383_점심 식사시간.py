@@ -16,7 +16,7 @@ for test_case in range(1, T + 1):
     cases = []
 
     # print('start',test_case)
-    result = 100000
+    sample = 100000
 
     people = []
     stairs = []
@@ -116,7 +116,7 @@ for test_case in range(1, T + 1):
                     t.remove(d)
             time += 1
 
-        result = min(result, time)
+        sample = min(sample, time)
         # print('time is ',time)
 
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))

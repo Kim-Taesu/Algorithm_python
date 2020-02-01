@@ -15,7 +15,7 @@ def move(arr, n, d):
 
 
 for test_case in range(1, T + 1):
-    result = 0
+    sample = 0
 
     K = int(input())
 
@@ -68,6 +68,6 @@ for test_case in range(1, T + 1):
     tmp = 1
     for a in range(4):
         if arr[a][0] == 1:
-            result += tmp
+            sample += tmp
         tmp *= 2
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))

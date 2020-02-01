@@ -38,9 +38,9 @@ def dfs(i, j):
 
 
 visit[n - 1][n - 1] = arr[n - 1][n - 1]
-result = dfs(0, 0)
+sample = dfs(0, 0)
 
-if result > 0:
-    print(result)
+if sample > 0:
+    print(sample)
 else:
     print(-1)

@@ -8,7 +8,7 @@ si, sj = 0, 0
 
 
 def go(i, j, val):
-    global N, arr, visit, si, sj, result
+    global N, arr, visit, si, sj, sample
     # print(i, j, val)
 
     for z in range(4):
@@ -32,7 +32,7 @@ def go(i, j, val):
 
 
 for test_case in range(1, T + 1):
-    result = -1
+    sample = -1
     N = int(input())
 
     arr = []
@@ -48,4 +48,4 @@ for test_case in range(1, T + 1):
             si, sj = i, j
             go(i, j, [arr[i][j]])
 
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))

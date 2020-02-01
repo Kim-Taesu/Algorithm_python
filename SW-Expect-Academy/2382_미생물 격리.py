@@ -3,7 +3,7 @@ from collections import deque
 T = int(input())
 
 for test_case in range(1, T + 1):
-    result = 0
+    sample = 0
 
     N, M, K = map(int, input().strip().split(' '))
 
@@ -125,6 +125,6 @@ for test_case in range(1, T + 1):
     for i in range(N):
         for j in range(N):
             if arr[1][i][j] != 0:
-                result += arr[1][i][j][0]
+                sample += arr[1][i][j][0]
 
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))

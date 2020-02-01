@@ -1,7 +1,7 @@
 T = int(input())
 
 for test_case in range(1, T + 1):
-    result = 0
+    sample = 0
 
     N, X = map(int, input().strip().split(' '))
     arr = []
@@ -53,7 +53,7 @@ for test_case in range(1, T + 1):
                 pass
         # print(check)
         if isOk:
-            result += 1
+            sample += 1
         # print(result)
         arr.append(line)
 
@@ -105,7 +105,7 @@ for test_case in range(1, T + 1):
                     break
                 pass
         if isOk:
-            result += 1
+            sample += 1
         # print(result)
 
-    print('#%d %d' % (test_case, result))
+    print('#%d %d' % (test_case, sample))
