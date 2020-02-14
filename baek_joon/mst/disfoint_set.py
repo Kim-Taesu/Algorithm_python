@@ -21,3 +21,4 @@ class DisjointSet:
             self.parent[node1] = node2
         else:
             self.parent[node2] = node1
+        print(self.parent)

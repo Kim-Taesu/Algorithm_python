@@ -5,21 +5,26 @@ from baek_joon.mst.config import *
 
 E = len(DATA_LIST)
 print('간선 개수:', E)
-INF = sys.maxsize
+INF = -1
 arr = [[INF] * V for _ in range(V)]
 for DATA in DATA_LIST:
     x, y, w = DATA
-    arr[x - 1][y - 1] = w
-    arr[y - 1][x - 1] = w
+    arr[x][y] = w
+    arr[y][x] = w
 
 print('출발 노드:', K)
 
 heap = []
 node = []
 
+for a in arr:
+    print(a)
+print()
+
 heapq.heappush(heap, (0, K))
 weight_sum = 0
 while not len(node) == V:
+    print(heap)
     weight, start = heapq.heappop(heap)
     node.append(start)
     weight_sum += weight

@@ -7,8 +7,8 @@ INF = sys.maxsize
 
 
 # 다익스트라 알고리즘
-def dijkstra(status, start):
-    distance = [INF] * len(status)
+def dijkstra(start):
+    distance = [INF] * len(graph_status)
     distance[start] = 0
 
     priority_queue = []
@@ -19,7 +19,7 @@ def dijkstra(status, start):
         cur_dist, cur_node = heapq.heappop(priority_queue)
 
         # 인접 노드 iteration
-        for dest, dest_dist in status[cur_node].items():
+        for dest, dest_dist in graph_status[cur_node].items():
             next_dist = distance[cur_node] + dest_dist
             if next_dist < distance[dest]:
                 distance[dest] = next_dist
@@ -34,8 +34,9 @@ for DATA in DATA_LIST:
         graph_status[u][v] = min(graph_status[u][v], w)
     else:
         graph_status[u][v] = w
+
 print('출발 노드:', K)
-dist = dijkstra(graph_status, K)
+dist = dijkstra(K)
 for d in dist:
     print(d if d != INF else "INF")
 
