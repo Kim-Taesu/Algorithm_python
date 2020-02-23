@@ -23,7 +23,9 @@ def bfs(word, i, j):
     while queue:
         cx, cy = queue.popleft()
 
+        word.remove(arr[cx][cy])
         find.append((cx, cy))
+
         print('\t', queue, find)
 
         if len(find) == len(word):
@@ -83,11 +85,11 @@ for z in range(b):
                 if find_word:
                     break
                 if arr[i][j] in word:
-                    word.remove(arr[i][j])
                     find_word = bfs(word, i, j)
-                    max_score += get_score(word)
-                    long_word = get_long_word(long_word, word)
-                    find_count += 1
+                    if find_word:
+                        max_score += get_score(word)
+                        long_word = get_long_word(long_word, word)
+                        find_count += 1
 
     print(max_score, long_word, find_count)
 
