@@ -44,11 +44,11 @@ def bfs(i, j, word):
 
 for word in words:
     print(word)
-    flag = False
+    is_find = False
 
     for i in range(len(arr)):
         for j in range(len(arr[0])):
 
-            if not flag and arr[i][j] == word[0]:
-                flag = bfs(i, j, word)
-                if flag: print('find')
+            if not is_find and arr[i][j] == word[0]:
+                is_find = bfs(i, j, word)
+                if is_find: print('find')

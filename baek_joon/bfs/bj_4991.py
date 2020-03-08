@@ -27,13 +27,13 @@ while True:
             elif line[j] == 'x':
                 arr[i][j] = -1
 
-    flag = (1 << virus) - 1
+    is_find = (1 << virus) - 1
     check = 0
 
     while queue:
         d, x, y = queue.popleft()
 
-        if d == flag:
+        if d == is_find:
             print(visit[x][y][d])
             check = -1
             break

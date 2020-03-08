@@ -48,6 +48,6 @@ E = int(input().strip())
 E_list = []
 for _ in range(E):
     v, u, w = list(map(int, input().strip().split()))
-    heapq.heappush(E_list, (w, v-1, u-1))
+    heapq.heappush(E_list, (w, v - 1, u - 1))
 
 print(kruskal(V, E, E_list))

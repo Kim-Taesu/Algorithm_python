@@ -39,5 +39,3 @@ print('출발 노드:', K)
 dist = dijkstra(K)
 for d in dist:
     print(d if d != INF else "INF")
-
-

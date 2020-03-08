@@ -4,7 +4,7 @@ sys.setrecursionlimit(10 ** 6)
 
 N = int(input())
 arr = ['1', '2', '3']
-flag = False
+is_find = False
 
 
 def check(s):

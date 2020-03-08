@@ -1,5 +1,6 @@
 import sys
 from itertools import combinations
+
 N, M = map(int, input().strip().split())
 house = []
 store = []

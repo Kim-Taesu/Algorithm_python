@@ -26,12 +26,12 @@ for _ in range(int(input())):
         arr[x].append(y)
         arr[y].append(x)
 
-    flag = True
+    is_find = True
 
     print(arr)
     for i in range(1, v + 1):
         if check[i] == 0:
             if dfs(i, 1, arr, check) is False:
-                flag = False
+                is_find = False
                 break
-    print("YES" if flag else "NO")
+    print("YES" if is_find else "NO")

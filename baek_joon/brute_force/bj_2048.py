@@ -1,5 +1,4 @@
 import copy
-from itertools import combinations_with_replacement
 
 N = int(input())
 
@@ -83,13 +82,13 @@ def move(tmp, direction):
         sx, sy = sx + cx, sy + cy
 
 
-
 def find(tmp):
     global max_block
     for i in range(N):
         for j in range(N):
             if tmp[i][j] != 0 and max_block < tmp[i][j]:
                 max_block = tmp[i][j]
+
 
 for n in range(1, 5 + 1):
     get_direction(n, [])

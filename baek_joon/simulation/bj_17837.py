@@ -1,5 +1,3 @@
-import sys
-
 N, K = map(int, input().strip().split(' '))
 arr = [[0] * N for _ in range(N)]
 

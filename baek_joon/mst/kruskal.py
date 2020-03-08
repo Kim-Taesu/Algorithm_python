@@ -10,7 +10,7 @@ def kruskal(V, data_list):
     for data in sorted(data_list, key=lambda cost: cost[2]):
         v, u, w = data
 
-        if not disjoint.find_parent(v,u):
+        if not disjoint.find_parent(v, u):
             disjoint.union(v, u)
             result.append(data)
             weight += w

@@ -28,12 +28,12 @@ def calc(n1, n2, index):
 
 min = 0
 max = 0
-flag = True
+is_find = True
 
 
 def go(result, op, count):
     if (count == total):
-        global flag, min, max
+        global is_find, min, max
         if (flag):
             min = result
             max = result

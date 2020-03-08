@@ -1,5 +1,4 @@
 import heapq
-import sys
 
 from baek_joon.mst.config import *
 

@@ -25,7 +25,6 @@ for k in range(V):
             if arr[i][k] != INF and arr[k][j] != INF:
                 arr[i][j] = min(arr[i][j], arr[i][k] + arr[k][j])
 
-
 print('플로이드-와샬 적용')
 for a in arr:
     for i in a:
