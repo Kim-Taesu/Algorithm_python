@@ -8,7 +8,7 @@ arr = [
     ['X', 'O', 'Q', 'R', 'S']
 ]
 
-words = ['PRETTY', 'GIRL', 'REPEAT', 'URPRETTEAIGXXTONQZRYS']
+words = ['UXGPR']
 
 dx = [0, 0, 1, -1, -1, -1, 1, 1]
 dy = [1, -1, 0, 0, -1, 1, 1, -1]
@@ -51,4 +51,5 @@ for word in words:
 
             if not is_find and arr[i][j] == word[0]:
                 is_find = bfs(i, j, word)
-                if is_find: print('find')
+                if is_find:
+                    print('find')

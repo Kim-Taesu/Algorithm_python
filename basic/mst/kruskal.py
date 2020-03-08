@@ -1,5 +1,5 @@
-from baek_joon.mst.config import *
-from baek_joon.mst.disfoint_set import *
+from basic.mst.config import *
+from basic.mst.disfoint_set import *
 
 
 def kruskal(V, data_list):

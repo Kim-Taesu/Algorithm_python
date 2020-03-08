@@ -1,5 +1,7 @@
+import sys
 from collections import deque
 
+input = sys.stdin.readline
 w = int(input())
 words = []
 for _ in range(w):
@@ -60,8 +62,39 @@ def get_score(word):
 def get_long_word(long_word, word):
     if len(long_word) < len(word):
         return word
+    elif len(long_word) == len(word):
+        for i in range(len(long_word)):
+            if long_word[i] > word[i]:
+                return word
+            elif long_word[i] < word[i]:
+                return long_word
     else:
         return long_word
+
+
+def dfs(cx, cy, index):
+    global is_find, max_score, long_word, find_count
+    if is_find:
+        return
+
+    if index + 1 == len(word):
+        # print(word, 'find')
+        max_score += get_score(word)
+        long_word = get_long_word(long_word, word)
+        find_count += 1
+        is_find = True
+        return
+
+    for z in range(len(dx)):
+        nx, ny = cx + dx[z], cy + dy[z]
+
+        if 0 <= nx < 4 and 0 <= ny < 4 and \
+                not visit[nx][ny] and \
+                arr[nx][ny] == word[index + 1]:
+            visit[nx][ny] = True
+            dfs(nx, ny, index + 1)
+            visit[nx][ny] = False
+            pass
 
 
 for z in range(b):
@@ -69,29 +102,22 @@ for z in range(b):
 
     for _ in range(4):
         arr.append(list(input().strip()))
+    dump = input().strip()
 
     max_score = 0
-    long_word = ""
+    long_word = []
     find_count = 0
 
     for word_str in words:
         word = list(word_str)
-        find_word = False
-        print('find', word)
+        # print(word)
+        is_find = False
         for i in range(4):
-            if find_word:
-                break
             for j in range(4):
-                if find_word:
-                    break
-                if arr[i][j] in word:
-                    find_word = bfs(word, i, j)
-                    if find_word:
-                        max_score += get_score(word)
-                        long_word = get_long_word(long_word, word)
-                        find_count += 1
+                if arr[i][j] == word[0]:
+                    if is_find: break
+                    visit = [[False] * 4 for _ in range(4)]
+                    visit[i][j] = True
+                    dfs(i, j, 0)
 
-    print(max_score, long_word, find_count)
-
-    if z < b - 1:
-        input()
+    print(max_score, ''.join(long_word), find_count)

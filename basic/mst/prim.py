@@ -1,6 +1,6 @@
 import heapq
 
-from baek_joon.mst.config import *
+from basic.mst.config import *
 
 E = len(DATA_LIST)
 print('간선 개수:', E)

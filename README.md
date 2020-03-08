@@ -17,6 +17,7 @@
 - [백준 문제 풀이](baek_joon)
 - [프로그래머스](programmers)
 - [SW-Expect-Academy](SW-Expect-Academy)
+- [시도중인 문제](fail)
 
 
 #### 언어

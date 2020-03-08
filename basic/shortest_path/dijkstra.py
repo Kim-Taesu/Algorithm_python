@@ -1,7 +1,7 @@
 import heapq
 import sys
 
-from baek_joon.mst.config import *
+from basic.mst.config import *
 
 INF = sys.maxsize
 

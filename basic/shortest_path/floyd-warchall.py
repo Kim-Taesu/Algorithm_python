@@ -1,6 +1,6 @@
 import sys
 
-from baek_joon.mst.config import *
+from basic.mst.config import *
 
 INF = sys.maxsize
 arr = [[INF] * V for _ in range(V)]
