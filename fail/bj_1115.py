@@ -1,23 +1,28 @@
-from collections import deque
+import sys
+from itertools import permutations
 
+sys.setrecursionlimit(10 ** 6)
+
+input = sys.stdin.readline
 N = int(input())
-arr = list(map(int, input().strip().split(' ')))
-min_value = N + 1
+P = list(map(int, input().strip().split(' ')))
+perfect_p_list = set(permutations([i for i in range(1, N)], N - 1))
+min_count = sys.maxsize
 
-queue = deque()
-for i in range(1, N):
-    queue.append((str(i), 0 if i == arr[0] else 1))
 
-while queue:
-    item, diff_count = queue.popleft()
+def compute_origin_p(p_tmp):
+    result = [0] * N
+    result[0] = p_tmp[0]
+    for t in range(len(p_tmp) - 1):
+        result[p_tmp[t]] = p_tmp[t + 1]
+    return result
 
-    if len(item) + 1 == N:
-        diff_count = diff_count + 1 if arr[int(item[len(item) - 1])] == 0 else diff_count
-        print(item, diff_count)
-        continue
 
-    for i in range(1, N):
-        if str(i) not in item:
-            queue.append((item + str(i), diff_count + 1 if arr[len(item)] == i else diff_count))
-
-print(min_value)
+for perfect_p_tmp in perfect_p_list:
+    origin_p = compute_origin_p(perfect_p_tmp)
+    diff_count = 0
+    for index in range(N):
+        if origin_p[index] != P[index]:
+            diff_count += 1
+    min_count = min(min_count, diff_count)
+print(min_count)
